@@ -197,3 +197,19 @@
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
+.modal-body {
+  padding: 0;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  span {
+    color: #0D1D31;
+  }
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}

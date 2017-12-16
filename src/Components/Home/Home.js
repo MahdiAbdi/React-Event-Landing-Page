@@ -7,7 +7,6 @@ class Home extends Component {
   }
 
   bgDefiner() {
-    console.log(Container,Row,Col)
     return {
       background: `transparent url(${this.props.background}) 50% 0 repeat`
     };
@@ -19,7 +18,6 @@ class Home extends Component {
         <div className="event-description">
           <div className="container bordered">
             Hello
-            {/* FUCK THIS SHIT */}
           </div>
         </div>
       </section>

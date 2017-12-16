@@ -1,7 +1,28 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+      image: ''
+    }
+    this.toggle = this.toggle.bind(this);
+    this.setModalImage = this.setModalImage.bind(this);
+  }
+
+  toggle() {
+    this.setState({
+      modal: !this.state.modal
+    });
+  }
+
+  setModalImage(image) {
+    this.setState({image: image});
+  }
+
   render(){
     return(
       <section className="container">
@@ -33,7 +54,7 @@ class About extends Component {
                 this.props.images.map((image, index) =>
                   <Col key={index} sm="6" xs="6">
                     <div className="thumbnail no-border no-padding">
-                      <div className="media">
+                      <div className="media" onClick={() => {this.setModalImage(image);this.toggle();}}>
                         <img src={image.small} alt={image.alt} />
                         <div className="caption hovered">
                           <div className="caption-wrapper div-table">
@@ -44,12 +65,22 @@ class About extends Component {
                         </div>
                       </div>
                     </div>
+
                   </Col>
                 )
               }
             </Row>
           </Col>
         </Row>
+        {/* <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button> */}
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalBody>
+            <img src={this.state.image.large} alt={this.state.image.alt} />
+            <span>
+              {this.state.image.alt}
+            </span>
+          </ModalBody>
+        </Modal>
       </section>
     )
   }

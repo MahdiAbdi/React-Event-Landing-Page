@@ -211,6 +211,18 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
+.modal-body {
+  padding: 0;
+  text-align: center; }
+  .modal-body img {
+    width: 100%; }
+  .modal-body span {
+    color: #0D1D31; }
+
+.modal-content {
+  background-color: transparent;
+  border: none; }
+
 /* --------------------------------------------------------------------------
  * jThemes Studio : im Event - One Page HTML Event Conference Template
  *
