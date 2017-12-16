@@ -13,3 +13,35 @@
   background: #fff;
   border: 2px solid blue;
   border-radius: 5px 10px 0px 5px; }
+
+.rhex {
+  background-color: #dc143c;
+  margin-top: 14px;
+  width: 50px;
+  height: 28px;
+  border-radius: 2px; }
+
+.rhex:before,
+.rhex:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background-color: inherit;
+  content: ''; }
+
+.rhex:before {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg); }
+
+.rhex:after {
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg); }
