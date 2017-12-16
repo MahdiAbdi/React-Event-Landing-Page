@@ -1,47 +1,208 @@
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.css);
-.home {
-  background-position: 50% 0 !important;
-  background-size: cover !important;
-  height: 100vh;
-  position: relative; }
+/* 3.12 - Thumbnails / Features
+/* ========================================================================== */
+.thumbnail {
+  position: relative;
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0; }
 
-.event-description {
-  position: absolute;
-  bottom: 0; }
+.thumbnail.hover,
+.thumbnail:hover {
+  border: solid 1px #dc143c; }
 
-.bordered {
-  background: #fff;
-  border: 2px solid blue;
-  border-radius: 5px 10px 0px 5px; }
+.thumbnail.no-border,
+.thumbnail.no-border.hover,
+.thumbnail.no-border:hover {
+  border: none; }
 
-.rhex {
-  background-color: #dc143c;
-  margin-top: 14px;
-  width: 50px;
-  height: 28px;
-  border-radius: 2px; }
+.thumbnail.no-padding {
+  padding: 0; }
 
-.rhex:before,
-.rhex:after {
+.thumbnail.no-radius {
+  border-radius: 0; }
+
+.row.thumbnails {
+  margin-top: -30px; }
+
+.row.thumbnails .thumbnail {
+  margin-top: 30px; }
+
+.row.thumbnails.no-padding {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+.row.thumbnails.no-padding [class*='col-'] {
+  padding: 0; }
+
+.row.thumbnails.no-padding .thumbnail {
+  margin-top: 0; }
+
+/* Thumbnail Media/Image
+ * -------------------------------------------------------------------------- */
+.thumbnail .media {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  /*-webkit-backface-visibility: hidden;*/
+  /*-webkit-transform: translateZ(0) scale(1.0, 1.0);*/
+  /*outline:1px solid transparent;*/ }
+
+.thumbnail .media:after {
+  content: '';
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background-color: inherit;
-  content: ''; }
+  /*background: url('/http://eazzy.me/html/imevent/assetsimg/overlay-media.png') repeat 50% 50%;*/ }
 
-.rhex:before {
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  transform: rotate(60deg); }
+.thumbnail.hover .media:after,
+.thumbnail:hover .media:after {
+  opacity: 0.1; }
 
-.rhex:after {
-  -webkit-transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  transform: rotate(-60deg); }
+.thumbnail .media img {
+  max-width: 100%;
+  width: 100%;
+  /*display: block;*/
+  /*transform-style: initial !important;*/
+  /*-webkit-backface-visibility: hidden !important;*/ }
+
+.thumbnail.hover .media img,
+.thumbnail:hover .media img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+/* fix animation bug */
+.thumbnail .media.img-circle,
+.thumbnail.hover .media.img-circle,
+.thumbnail:hover .media.img-circle {
+  -webkit-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  transform: scale(1) !important; }
+
+/* Thumbnail caption
+ * -------------------------------------------------------------------------- */
+.thumbnail {
+  border-radius: 10px;
+  overflow: hidden; }
+
+.thumbnail .caption {
+  padding: 20px 0 0 0;
+  overflow: hidden;
+  font-size: 14px; }
+
+.thumbnail .caption + .caption {
+  padding-top: 10px; }
+
+.thumbnail .caption.no-padding-top {
+  padding-top: 0; }
+
+.thumbnail .caption.no-padding-bottom {
+  padding-bottom: 0; }
+
+.thumbnail .caption.hovered {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  padding: 15px;
+  background-color: transparent;
+  /*dc143c*/
+  background-color: rgba(241, 190, 3, 0.6);
+  color: #ffffff;
+  opacity: 0;
+  z-index: 10; }
+
+.thumbnail.hover .caption.hovered,
+.thumbnail:hover .caption.hovered {
+  opacity: 1; }
+
+.caption-wrapper {
+  width: 100%; }
+
+/* Caption elements
+ * -------------------------------------------------------------------------- */
+.caption-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
+  color: #0d1d31; }
+
+.hovered .caption-title {
+  color: #ffffff; }
+
+.caption-buttons {
+  margin-bottom: 0; }
+
+.caption-buttons .btn {
+  /*background-color: #dc143c;*/
+  color: #ffffff;
+  font-size: 30px; }
+
+.caption-buttons .btn:hover {
+  /*background-color: #000000;*/ }
+
+.caption-category {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #dc143c; }
+
+.caption-redmore {
+  font-size: 12px;
+  color: #c4334b;
+  text-decoration: underline; }
+
+.caption-redmore:hover {
+  color: #000000; }
+
+/* --------------------------------------------------------------------------
+ * Thumbnail type
+ * -------------------------------------------------------------------------- */
+/* Thumbnail transition
+ * -------------------------------------------------------------------------- */
+.thumbnail .media,
+.thumbnail .media:after,
+.thumbnail .media:before,
+.thumbnail.hover .media,
+.thumbnail:hover .media,
+.thumbnail.hover .media:after,
+.thumbnail:hover .media:after,
+.thumbnail.hover .media:before,
+.thumbnail:hover .media:before,
+.thumbnail .media img,
+.thumbnail.hover .media img,
+.thumbnail:hover .media img,
+.thumbnail .media .fa,
+.thumbnail.hover .media .fa,
+.thumbnail:hover .media .fa,
+.thumbnail .caption-title,
+.thumbnail.hover .caption-title,
+.thumbnail:hover .caption-title,
+.thumbnail .caption-zoom,
+.thumbnail.hover .caption-zoom,
+.thumbnail:hover .caption-zoom,
+.thumbnail .caption-link,
+.thumbnail.hover .caption-link,
+.thumbnail:hover .caption-link,
+.thumbnail .caption-category,
+.thumbnail.hover .caption-category,
+.thumbnail:hover .caption-category,
+.thumbnail .caption,
+.thumbnail.hover .caption,
+.thumbnail:hover .caption {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
