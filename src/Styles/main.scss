@@ -1,3 +1,20 @@
-$primary : #E3C552;
+// Colors:
+$red-1: #DC143C;
+$red-2: #D80018;
+$blue-1: #386090;
+$blue-2: #4478B2;
+$yellow-1: #F1BE03;
+$yellow-2: #E3C552;
+$green-1: #89C144;
+$green-2: #2E9063;
+$orange-1: #E47911;
+$orange-2: #E48F4C;
+$purple-1: #563D7C;
+$purple-2: #685AB1;
+$pink: #EC005F;
+$cumin: #EC005F;
+
+$primary: $yellow-1;
+
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import '../Components/Home/home'
