@@ -18,25 +18,37 @@ class App extends Component {
         buttons: [
           {
             text: 'Register',
-            icon: 'arrow-circle-right'
+            href: '#',
+            icon: 'arrow-circle-right',
+            classes: ''
           },
           {
             text: 'Watch Video',
-            icon: ''
+            href: '#',
+            icon: '',
+            classes: 'btn-theme-transparent'
           }
         ],
         images: [
           {
-            src: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-1.jpg"
+            small: "http://eazzy.me/html/imevent/assets/img/preview/about-sm-1.jpg",
+            large: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-1.jpg",
+            alt: "alt?!"
           },
           {
-            src: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-2.jpg"
+            small: "http://eazzy.me/html/imevent/assets/img/preview/about-sm-2.jpg",
+            large: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-2.jpg",
+            alt: "alt?!"
           },
           {
-            src: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-3.jpg"
+            small: "http://eazzy.me/html/imevent/assets/img/preview/about-sm-3.jpg",
+            large: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-3.jpg",
+            alt: "alt?!"
           },
           {
-            src: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-4.jpg"
+            small: "http://eazzy.me/html/imevent/assets/img/preview/about-sm-4.jpg",
+            large: "http://eazzy.me/html/imevent/assets/img/preview/about-lg-4.jpg",
+            alt: "alt?!"
           },
         ]
       }
