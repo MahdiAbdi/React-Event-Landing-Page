@@ -23,64 +23,16 @@ class Sponsors extends Component {
           </h1>
 
           <OwlCarousel
-            className="owl-theme" items={6} loop margin={10} nav navText={["<i class='fa fa-caret-left' />","<i class='fa fa-caret-right' />"]}
+            className="owl-theme" items={this.props.column} loop margin={10} nav navText={["<i class='fa fa-caret-left' />","<i class='fa fa-caret-right' />"]}
           >
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-2.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-3.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-4.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-5.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-6.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-6.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-2.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-3.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-4.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-5.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-6.png" alt="" /></a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="http://eazzy.me/html/imevent/assets/img/partner/light/partner-6.png" alt="" /></a>
-            </div>
+            {
+              this.props.data.map((item, index) =>
+                <div class="item">
+                  <a href={item.href}>
+                    <img src={item.img} alt={item.alt} /></a>
+                </div>
+              )
+            }
           </OwlCarousel>
           <Row>
             <p className="btn-row">

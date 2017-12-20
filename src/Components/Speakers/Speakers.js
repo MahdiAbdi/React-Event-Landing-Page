@@ -4,6 +4,19 @@ class Speakers extends Component {
   constructor(props) {
     super(props);
   }
+
+  widthDefiner() {
+    let customWidth = Math.floor(100/this.props.column);
+    console.log(this.props.column,customWidth);
+    let widthStyle = {
+      width: `${customWidth}%`,
+      'max-width': `${customWidth}%`,
+      'flex-base': `${customWidth}%`,
+      'flex': `0 0 ${customWidth}%`,
+    }
+    return widthStyle;
+  }
+
   render(){
     return(
       <section className="speakers">
@@ -23,7 +36,7 @@ class Speakers extends Component {
           <Row>
             {
               this.props.data.map((speaker, index) =>
-                <Col md={3}>
+                <Col style={this.widthDefiner()} md={3}>
                   <div className="avatar">
                     <img src={speaker.img} />
                   </div>

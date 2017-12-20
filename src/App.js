@@ -74,6 +74,7 @@ class App extends Component {
         icon: 'thumbs-up',
         title: "Sponsors",
         subtitle: "dont forget it",
+        column: 5,
         buttons: [
           {
             text: 'Become a Sponsor Now!',
@@ -81,6 +82,73 @@ class App extends Component {
             icon: 'thumbs-up',
             classes: ''
           }
+        ],
+        data: [
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
+          {
+            href: "#",
+            img: "http://eazzy.me/html/imevent/assets/img/partner/light/partner-1.png",
+            alt: ""
+          },
         ],
       },
       testimonials: {
@@ -108,6 +176,7 @@ class App extends Component {
       speakers : {
         icon: 'user',
         title : 'Event Speakers',
+        column: 6,
         subtitle: "meet with greaters",
         buttons: [
           {
@@ -197,9 +266,9 @@ class App extends Component {
         {/* <Home background={this.state.home.background} /> */}
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
-        <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} buttons={this.state.sponsors.buttons} />
+        <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} data={this.state.sponsors.data} buttons={this.state.sponsors.buttons} column={this.state.sponsors.column} />
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
-        <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} />
+        <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
       </div>
     );
   }
