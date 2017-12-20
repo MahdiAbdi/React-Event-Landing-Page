@@ -3327,3 +3327,31 @@ body.rtl .pagination > li > a {margin: 0 0 0 10px;}
     body.rtl .navigation.closed .menu-toggle {right: auto; left: 15px;}
     body.rtl .navigation.opened .menu-toggle {right: auto; left: 15px;}
 }
+
+.donation {
+  background: $primary;
+  color: #fff;
+}
+
+.donation .title-inner {
+  color: #fff;
+}
+
+.donation .section-title small {
+  color: #fff;
+}
+
+.donation .section-title .rhex {
+  background-color: #ffffff;
+}
+
+.donation .section-title .fa-stack .fa {
+  color: #F1BE03
+}
+
+.donation a.btn {
+  background: #fff;
+  &:hover {
+    background: #435469;
+  }
+}

@@ -17,6 +17,7 @@ $cumin: #EC005F;
 $primary: $yellow-1;
 
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './userstyle';
 // @import '../Components/Home/home';
 @import '../Components/About/about';
-@import './userstyle';
+@import '../Components/Donation/donation';

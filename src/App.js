@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import Donation from './Components/Donation/Donation';
 
 import './Styles/main.css'
 class App extends Component {
@@ -51,7 +52,21 @@ class App extends Component {
             alt: "alt?!"
           },
         ]
-      }
+      },
+      donation: {
+        icon: 'ticket',
+        title: "Donation ",
+        subtitle: "lorem ipsum",
+        text: "Etiam molestie, quam eget dignissim dapibus, diam libero auctor justo, a eleifend urna tellus et ligula. Curabitur elementum diam nec lacus pretium.",
+        buttons: [
+          {
+            text: 'Make a Donation Now',
+            href: '#',
+            icon: '',
+            classes: 'btn-theme-transparent'
+          }
+        ],
+      },
     }
   }
   render() {
@@ -59,6 +74,7 @@ class App extends Component {
       <div>
         {/* <Home background={this.state.home.background} /> */}
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
+        <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
       </div>
     );
   }
