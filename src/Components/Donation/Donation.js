@@ -7,7 +7,7 @@ class Donation extends Component {
   }
   render(){
     return(
-      <section className="donation">
+      <section className="donation opposite">
         <div className="container">
           <h1 className="section-title">
             <span className="icon-inner">

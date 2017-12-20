@@ -3328,30 +3328,40 @@ body.rtl .pagination > li > a {margin: 0 0 0 10px;}
     body.rtl .navigation.opened .menu-toggle {right: auto; left: 15px;}
 }
 
-.donation {
+.opposite {
   background: $primary;
   color: #fff;
 }
 
-.donation .title-inner {
+.opposite .title-inner {
   color: #fff;
 }
 
-.donation .section-title small {
+.opposite .section-title small {
   color: #fff;
 }
 
-.donation .section-title .rhex {
+.opposite .section-title .rhex {
   background-color: #ffffff;
 }
 
-.donation .section-title .fa-stack .fa {
-  color: #F1BE03
+.opposite .section-title .fa-stack .fa {
+  color: $primary;
 }
 
-.donation a.btn {
+.opposite a.btn {
   background: #fff;
   &:hover {
     background: #435469;
   }
+}
+
+.sponsors {
+  .owl-carousel div a {
+    background-color: #f3f4f5;
+    border-radius: 10px;
+  }
+}
+section {
+  margin-bottom: 50px;
 }
