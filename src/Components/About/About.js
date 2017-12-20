@@ -27,7 +27,7 @@ class About extends Component {
     return(
       <section className="container">
         <h1 className="section-title">
-          <span>
+          <span className="icon-inner">
             <span className="fa-stack">
               <i className="fa rhex fa-stack-2x"></i>
               <i className="fa fa-star fa-stack-1x"></i>
