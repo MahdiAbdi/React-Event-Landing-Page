@@ -5,6 +5,7 @@ import Donation from './Components/Donation/Donation';
 import Sponsors from './Components/Sponsors/Sponsors';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Speakers from './Components/Speakers/Speakers';
+import Price from './Components/Price/Price';
 import './Styles/main.css'
 
 class App extends Component {
@@ -258,6 +259,53 @@ class App extends Component {
           },
         ],
       },
+      price: {
+        icon: 'dollar',
+        title : 'Event Price list',
+        subtitle: "perfect price for event",
+        data: [
+          {
+            name: "Personal",
+            price: "111",
+            features: [
+              "Lorem ipsum dolor sit amet",
+              "Consectetur adipiscing elit",
+              "Sed vitae diam metus",
+              "Donec cursus magna",
+            ],
+          },
+          {
+            name: "Personal",
+            price: "111",
+            features: [
+              "Lorem ipsum dolor sit amet",
+              "Consectetur adipiscing elit",
+              "Sed vitae diam metus",
+              "Donec cursus magna",
+            ],
+          },
+          {
+            name: "Personal",
+            price: "124",
+            features: [
+              "Lorem ipsum dolor sit amet",
+              "Consectetur adipiscing elit",
+              "Sed vitae diam metus",
+              "Donec cursus magna",
+            ],
+          },
+          {
+            name: "Personal",
+            price: "175",
+            features: [
+              "Lorem ipsum dolor sit amet",
+              "Consectetur adipiscing elit",
+              "Sed vitae diam metus",
+              "Donec cursus magna",
+            ],
+          },
+        ]
+      }
     }
   }
   render() {
@@ -269,6 +317,7 @@ class App extends Component {
         <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} data={this.state.sponsors.data} buttons={this.state.sponsors.buttons} column={this.state.sponsors.column} />
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
         <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
+        <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} />
       </div>
     );
   }
