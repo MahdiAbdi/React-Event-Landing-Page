@@ -4087,3 +4087,12 @@ section {
   width: 60%;
   margin-bottom: 20px;
   float: right; }
+
+.speakers img {
+  width: 100%; }
+
+.speakers .titles h4, .speakers .titles h5 {
+  color: #000; }
+
+.speakers p.btn-row {
+  margin: 0 auto; }

@@ -4,6 +4,7 @@ import About from './Components/About/About';
 import Donation from './Components/Donation/Donation';
 import Sponsors from './Components/Sponsors/Sponsors';
 import Testimonials from './Components/Testimonials/Testimonials';
+import Speakers from './Components/Speakers/Speakers';
 import './Styles/main.css'
 
 class App extends Component {
@@ -104,6 +105,90 @@ class App extends Component {
           },
         ]
       },
+      speakers : {
+        icon: 'user',
+        title : 'Event Speakers',
+        subtitle: "meet with greaters",
+        buttons: [
+          {
+            text: 'See All Speakers',
+            href: '#',
+            icon: 'user',
+            classes: ''
+          }
+        ],
+        socials: [
+          'facebook', 'twitter', 'dribbble'
+        ],
+        data : [
+          {
+            name: 'baby Stewards Jr',
+            img: 'https://bootstrapmade.com/demo/themes/Groovin/assets/img/dummies/team1.jpg',
+            position: 'CEO - Founder',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '#',
+              twitter: '#',
+              dribbble: ''
+            }
+          },
+          {
+            name: 'Tommy Kreunichev',
+            img: 'https://bootstrapmade.com/demo/themes/Groovin/assets/img/dummies/team2.jpg',
+            position: ' Lead designer ',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '#',
+              twitter: '',
+              dribbble: '#'
+            }
+          },
+          {
+            name: 'Moriella Maccini',
+            img: 'https://bootstrapmade.com/demo/themes/Groovin/assets/img/dummies/team3.jpg',
+            position: 'Customer support',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '',
+              twitter: '#',
+              dribbble: '#'
+            }
+          },
+          {
+            name: 'Brian James Scoothie',
+            img: 'https://bootstrapmade.com/demo/themes/Groovin/assets/img/dummies/team4.jpg',
+            position: 'Coffee maker',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '#',
+              twitter: '',
+              dribbble: '#'
+            }
+          },
+          {
+            name: 'Sarah Jhinson',
+            img: 'https://bootstrapmade.com/demo/themes/Imperial/img/team-2.jpg',
+            position: 'Product Manager',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '',
+              twitter: '',
+              dribbble: '#'
+            }
+          },
+          {
+            name: 'Amanda Jepson',
+            img: 'https://bootstrapmade.com/demo/themes/Imperial/img/team-4.jpg',
+            position: 'Accountant',
+            text: "Praesent ac sem in neque venenatis tristique. Morbi et ligula velit. Nullam a augue vel mi porta vestibulum non ac elit.",
+            social : {
+              facebook: '#',
+              twitter: '#',
+              dribbble: '#'
+            }
+          },
+        ],
+      },
     }
   }
   render() {
@@ -114,6 +199,7 @@ class App extends Component {
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
         <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} buttons={this.state.sponsors.buttons} />
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
+        <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} />
       </div>
     );
   }
