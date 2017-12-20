@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Donation from './Components/Donation/Donation';
-
+import Sponsors from './Components/Sponsors/Sponsors';
 import './Styles/main.css'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -67,6 +68,19 @@ class App extends Component {
           }
         ],
       },
+      sponsors: {
+        icon: 'thumbs-up',
+        title: "Sponsors",
+        subtitle: "dont forget it",
+        buttons: [
+          {
+            text: 'Become a Sponsor Now!',
+            href: '#',
+            icon: 'thumbs-up',
+            classes: ''
+          }
+        ],
+      }
     }
   }
   render() {
@@ -75,6 +89,7 @@ class App extends Component {
         {/* <Home background={this.state.home.background} /> */}
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
+        <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} buttons={this.state.sponsors.buttons} />
       </div>
     );
   }

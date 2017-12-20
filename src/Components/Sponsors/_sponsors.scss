@@ -1,0 +1,28 @@
+.sponsors {
+  .owl-carousel div a {
+    display: block;
+    text-align: center;
+    background-color: #f3f4f5;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .owl-carousel div a img {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .owl-carousel .owl-item img {
+    width: auto;
+  }
+
+  .owl-theme .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -80px;
+  }
+
+  .btn-row {
+    margin: 0 auto;
+  }
+}
