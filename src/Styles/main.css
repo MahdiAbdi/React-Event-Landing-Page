@@ -3840,7 +3840,8 @@ body.rtl .pagination > li > a {
   border-radius: 10px; }
 
 section {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding: 50px 0; }
 
 /* 3.12 - Thumbnails / Features
 /* ========================================================================== */
