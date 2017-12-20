@@ -13,7 +13,7 @@ class Donation extends Component {
             <span className="icon-inner">
               <span className="fa-stack negative">
                 <i className="fa rhex fa-stack-2x"></i>
-                <i className="fa fa-star fa-stack-1x"></i>
+                <i className={`fa fa-${this.props.icon} fa-stack-1x`}></i>
               </span>
             </span>
             <span className="title-inner animated fadeInRight visible">
