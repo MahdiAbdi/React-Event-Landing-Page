@@ -3,6 +3,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Donation from './Components/Donation/Donation';
 import Sponsors from './Components/Sponsors/Sponsors';
+import Testimonials from './Components/Testimonials/Testimonials';
 import './Styles/main.css'
 
 class App extends Component {
@@ -80,7 +81,29 @@ class App extends Component {
             classes: ''
           }
         ],
-      }
+      },
+      testimonials: {
+        icon: 'comments',
+        title: "Testimonials",
+        subtitle: "See What People Say About Us",
+        quotes: [
+          {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+            company: "Vestaak",
+            avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-1.jpg"
+          },
+          {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+            company: "Vestaak",
+            avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-2.jpg"
+          },
+          {
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+            company: "Vestaak",
+            avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-3.jpg"
+          },
+        ]
+      },
     }
   }
   render() {
@@ -90,6 +113,7 @@ class App extends Component {
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
         <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} buttons={this.state.sponsors.buttons} />
+        <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
       </div>
     );
   }

@@ -14,7 +14,7 @@ $purple-2: #685AB1;
 $pink: #EC005F;
 $cumin: #EC005F;
 
-$primary: $yellow-1;
+$primary: $blue-1;
 
 @import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 @import './userstyle';
@@ -22,3 +22,4 @@ $primary: $yellow-1;
 @import '../Components/About/about';
 @import '../Components/Donation/donation';
 @import '../Components/Sponsors/sponsors';
+@import '../Components/Testimonials/testimonials';
