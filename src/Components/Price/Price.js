@@ -7,7 +7,7 @@ class Price extends Component {
   }
   render(){
     return(
-      <section>
+      <section className="price">
         <div className="container">
           <h1 className="section-title">
             <span className="icon-inner">
@@ -24,22 +24,25 @@ class Price extends Component {
           <Row>
             {
               this.props.data.map((plan, index) =>
-                <Col md={4} className="price-table featured">
-                  <div className="price-table-header">
-                    <div className="price-label">
-                      <h2 className="price-label-title">{plan.name}</h2>
+                <Col md={4} className="price-table-wrapper">
+                  <div className={`price-table ${plan.featured ? 'featured' : ''}`}>
+                    <div className="price-table-header">
+                      <div className="price-label">
+                        <h2 className="price-label-title">{plan.name}</h2>
+                      </div>
+                      <div className="price-value">
+                        <span className="price-number">{plan.price}</span><span className="price-unit">$</span><span className="price-per"></span>
+                      </div>
                     </div>
-                    <div className="price-value">
-                      <span className="price-number">{plan.price}</span><span className="price-unit">$</span><span className="price-per"></span>
-                    </div>
-                  </div>
-                  <div className="price-table-rows">
-                    <div className="price-table-row"><i className="fa fa-check-circle-o"></i> Lorem ipsum dolor sit amet</div>
-                    <div className="price-table-row odd"><i className="fa fa-check-circle-o"></i> Consectetur adipiscing elit</div>
-                    <div className="price-table-row"><i className="fa fa-check-circle-o"></i> Sed vitae diam metus</div>
-                    <div className="price-table-row odd"><i className="fa fa-check-circle-o"></i> Donec cursus magna</div>
-                    <div className="price-table-row-bottom">
-                      <a className="btn btn-theme scroll-to" href="#register">Register</a>
+                    <div className="price-table-rows">
+                      {
+                        plan.features.map((feature, index) =>
+                          <div className="price-table-row"><i className={`fa fa-${feature.icon}`}></i>{feature.text}</div>
+                        )
+                      }
+                      <div className="price-table-row-bottom">
+                        <a className="btn btn-theme scroll-to" href="#register">Register</a>
+                      </div>
                     </div>
                   </div>
                 </Col>

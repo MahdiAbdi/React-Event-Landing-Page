@@ -267,41 +267,93 @@ class App extends Component {
           {
             name: "Personal",
             price: "111",
+            featured: false,
             features: [
-              "Lorem ipsum dolor sit amet",
-              "Consectetur adipiscing elit",
-              "Sed vitae diam metus",
-              "Donec cursus magna",
+              {
+                text: "Lorem ipsum dolor sit amet",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Consectetur adipiscing elit",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Sed vitae diam metus",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Donec cursus magna",
+                icon: 'check-circle-o',
+              },
             ],
           },
           {
             name: "Personal",
             price: "111",
+            featured: true,
             features: [
-              "Lorem ipsum dolor sit amet",
-              "Consectetur adipiscing elit",
-              "Sed vitae diam metus",
-              "Donec cursus magna",
+              {
+                text: "Lorem ipsum dolor sit amet",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Consectetur adipiscing elit",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Sed vitae diam metus",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Donec cursus magna",
+                icon: 'check-circle-o',
+              },
             ],
           },
           {
             name: "Personal",
             price: "124",
+            featured: false,
             features: [
-              "Lorem ipsum dolor sit amet",
-              "Consectetur adipiscing elit",
-              "Sed vitae diam metus",
-              "Donec cursus magna",
+              {
+                text: "Lorem ipsum dolor sit amet",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Consectetur adipiscing elit",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Sed vitae diam metus",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Donec cursus magna",
+                icon: 'check-circle-o',
+              },
             ],
           },
           {
             name: "Personal",
             price: "175",
+            featured: false,
             features: [
-              "Lorem ipsum dolor sit amet",
-              "Consectetur adipiscing elit",
-              "Sed vitae diam metus",
-              "Donec cursus magna",
+              {
+                text: "Lorem ipsum dolor sit amet",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Consectetur adipiscing elit",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Sed vitae diam metus",
+                icon: 'check-circle-o',
+              },
+              {
+                text: "Donec cursus magna",
+                icon: 'check-circle-o',
+              },
             ],
           },
         ]
@@ -317,7 +369,7 @@ class App extends Component {
         <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} data={this.state.sponsors.data} buttons={this.state.sponsors.buttons} column={this.state.sponsors.column} />
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
         <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
-        <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} />
+        <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} featured={this.state.price.featured} />
       </div>
     );
   }
