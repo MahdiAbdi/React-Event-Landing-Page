@@ -6,6 +6,7 @@ import Sponsors from './Components/Sponsors/Sponsors';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Speakers from './Components/Speakers/Speakers';
 import Price from './Components/Price/Price';
+import Register from './Components/Register/Register';
 import './Styles/main.css'
 
 class App extends Component {
@@ -357,7 +358,48 @@ class App extends Component {
             ],
           },
         ]
+      },
+      register: {
+        icon: 'ticket',
+        title : 'Register now',
+        subtitle: "dont mıss event!",
+        data: [
+          {
+            name: 'name',
+            type: 'text',
+            title: '',
+            placeholder: 'Name and Surname'
+          },
+          {
+            name: 'email',
+            type: 'text',
+            title: '',
+            placeholder: 'Your Mail Here'
+          },
+          {
+            name: 'phone',
+            type: 'text',
+            title: '',
+            placeholder: 'Your Phone Number'
+          },
+          {
+            name: 'pricec',
+            type: 'dropdown',
+            title: '',
+            options: [
+              "100$",
+              "200$",
+              "300$",
+              "500$",
+            ],
+          },
+        ],
+        button: {
+          text: 'Register Nowww',
+          icon: 'arrow-circle-right',
       }
+
+      },
     }
   }
   render() {
@@ -370,6 +412,7 @@ class App extends Component {
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
         <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
         <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} featured={this.state.price.featured} />
+        <Register icon={this.state.register.icon} title={this.state.register.title} subtitle={this.state.register.subtitle} data={this.state.register.data} button={this.state.register.button} />
       </div>
     );
   }
