@@ -392,14 +392,14 @@ class App extends Component {
               "200$",
               "300$",
               "500$",
+              "850$",
             ],
           },
         ],
         button: {
           text: 'Register Nowww',
           icon: 'arrow-circle-right',
-      },
-      },
+      }},
       faq: {
         icons: {
           primary: 'question',
