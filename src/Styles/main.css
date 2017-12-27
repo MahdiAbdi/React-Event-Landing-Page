@@ -4091,3 +4091,18 @@ li a .fa {
   .recent-bp .buttons .btn {
     color: #fff;
     margin: auto; }
+
+.contact .msg {
+  height: 150px; }
+
+.contact .buttons {
+  text-align: center; }
+  .contact .buttons .btn {
+    color: #F1BE03;
+    margin: auto; }
+
+.contact .form-control {
+  background-color: rgba(2, 2, 2, 0.2);
+  border-color: #fff; }
+  .contact .form-control::placeholder {
+    color: #fff; }

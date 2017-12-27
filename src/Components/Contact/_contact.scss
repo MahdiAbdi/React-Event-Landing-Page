@@ -1,0 +1,19 @@
+.contact {
+  .msg {
+    height: 150px;
+  }
+  .buttons {
+    text-align: center;
+    .btn {
+      color: $primary;
+      margin: auto;
+    }
+  }
+  .form-control {
+    background-color: rgba(2, 2, 2, 0.2);
+    border-color: #fff;
+    &::placeholder{
+      color: #fff;
+    }
+  }
+}
