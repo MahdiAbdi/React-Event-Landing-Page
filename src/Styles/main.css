@@ -4085,3 +4085,9 @@ li a .fa {
 
 .recent-bp .post {
   margin-bottom: 10px; }
+
+.recent-bp .buttons {
+  text-align: center; }
+  .recent-bp .buttons .btn {
+    color: #fff;
+    margin: auto; }

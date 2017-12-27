@@ -543,6 +543,13 @@ class App extends Component {
         subtitle: "get news!",
         limit: '5',
         column: '4',
+        button: [
+          {
+            href: '#',
+            icon: 'file',
+            text: 'See all news',
+          },
+        ],
         data: [
           {
             type: 'video-camera',
@@ -700,7 +707,7 @@ class App extends Component {
             ],
           },
         ],
-      }
+      },
     }
   }
   render() {

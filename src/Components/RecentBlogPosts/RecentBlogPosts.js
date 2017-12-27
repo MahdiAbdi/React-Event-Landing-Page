@@ -76,6 +76,15 @@ class RecentBlogPosts extends Component {
               )
             }
           </Row>
+          <Row className="buttons">
+            {
+              this.props.button.map((btn, index) =>
+                <a href={btn.href} className="btn btn-theme">
+                  <i className={`fa fa-${btn.icon}`} /> {btn.text}
+                </a>
+              )
+            }
+          </Row>
         </div>
       </section>
     )
