@@ -8,6 +8,7 @@ import Speakers from './Components/Speakers/Speakers';
 import Price from './Components/Price/Price';
 import Register from './Components/Register/Register';
 import FAQ from './Components/FAQ/FAQ';
+import RecentBlogPosts from './Components/RecentBlogPosts/RecentBlogPosts';
 import './Styles/main.css'
 
 class App extends Component {
@@ -536,6 +537,170 @@ class App extends Component {
           },
         ],
       },
+      recentbp: {
+        icon: 'file-text-o',
+        title : 'Recent Blog Posts',
+        subtitle: "get news!",
+        limit: '5',
+        column: '4',
+        data: [
+          {
+            type: 'video-camera',
+            img: {
+              src: 'http://eazzy.me/html/imevent/assets/img/preview/recent-post-1.jpg',
+              alt: ''
+            },
+            title: 'Standart Blog Post Header Here',
+            date: '1st Sep 1998',
+            text: "Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.",
+            button: {
+              href: '#',
+              text: 'Read More',
+            },
+            comments: [
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+            ],
+          },
+          {
+            type: 'video-camera',
+            img: {
+              src: 'http://eazzy.me/html/imevent/assets/img/preview/recent-post-1.jpg',
+              alt: ''
+            },
+            title: 'Standart Blog Post Header Here',
+            date: '1st Sep 1998',
+            text: "Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.",
+            button: {
+              href: '#',
+              text: 'Read More',
+            },
+            comments: [
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+            ],
+          },
+          {
+            type: 'video-camera',
+            img: {
+              src: 'http://eazzy.me/html/imevent/assets/img/preview/recent-post-1.jpg',
+              alt: ''
+            },
+            title: 'Standart Blog Post Header Here',
+            date: '1st Sep 1998',
+            text: "Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.",
+            button: {
+              href: '#',
+              text: 'Read More',
+            },
+            comments: [
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+            ],
+          },
+          {
+            type: 'video-camera',
+            img: {
+              src: 'http://eazzy.me/html/imevent/assets/img/preview/recent-post-1.jpg',
+              alt: ''
+            },
+            title: 'Standart Blog Post Header Here',
+            date: '1st Sep 1998',
+            text: "Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.",
+            button: {
+              href: '#',
+              text: 'Read More',
+            },
+            comments: [
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+            ],
+          },
+          {
+            type: 'video-camera',
+            img: {
+              src: 'http://eazzy.me/html/imevent/assets/img/preview/recent-post-1.jpg',
+              alt: ''
+            },
+            title: 'Standart Blog Post Header Here',
+            date: '1st Sep 1998',
+            text: "Fusce pellentesque velvitae tincidunt egestas. Pellentesque habitant morbi tristiquetus et senectus et netus et malesuada ac turpis.",
+            button: {
+              href: '#',
+              text: 'Read More',
+            },
+            comments: [
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+              "asdfghjklasdfghjkl",
+              "qwertyuiuytrewq",
+              "zxcvbnm,mnbvcxz",
+            ],
+          },
+        ],
+      }
     }
   }
   render() {
@@ -550,6 +715,7 @@ class App extends Component {
         <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} featured={this.state.price.featured} />
         <Register icon={this.state.register.icon} title={this.state.register.title} subtitle={this.state.register.subtitle} data={this.state.register.data} button={this.state.register.button} />
         <FAQ icons={this.state.faq.icons} title={this.state.faq.title} subtitle={this.state.faq.subtitle} data={this.state.faq.data} button={this.state.faq.button} />
+        <RecentBlogPosts icon={this.state.recentbp.icon} title={this.state.recentbp.title} subtitle={this.state.recentbp.subtitle} data={this.state.recentbp.data} button={this.state.recentbp.button} limit={this.state.recentbp.limit} column={this.state.recentbp.column} />
       </div>
     );
   }

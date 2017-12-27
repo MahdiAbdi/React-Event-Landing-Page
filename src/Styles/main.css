@@ -4076,3 +4076,12 @@ li a .fa {
   font-size: 14px;
   line-height: 24px;
   color: #435469; }
+
+.recent-bp .date {
+  margin-left: 5px; }
+
+.recent-bp .fa-comment {
+  margin-right: 3px; }
+
+.recent-bp .post {
+  margin-bottom: 10px; }
