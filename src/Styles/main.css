@@ -1827,81 +1827,6 @@ textarea {
 
 /* 3.7 - FAQ
 /* ========================================================================== */
-.row.faq .tab-content {
-  font-size: 14px;
-  line-height: 24px;
-  border: solid 1px #435469;
-  border-radius: 2px;
-  background-color: #fdfdfd;
-  padding: 30px 30px 10px 30px;
-  position: relative; }
-
-@media (max-width: 767px) {
-  .row.faq .tab-content {
-    margin-top: 20px;
-    border-radius: 0 0 10px 10px; } }
-
-@media (min-width: 768px) {
-  .row.faq .nav li.active:before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: -31px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-right: 10px solid #435469;
-    border-bottom: 10px solid transparent;
-    z-index: 1; }
-  .row.faq .nav li.active:after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: -32px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-right: 10px solid #fdfdfd;
-    border-bottom: 10px solid transparent;
-    z-index: 2; } }
-
-@media (max-width: 767px) {
-  .row.faq > .pull-left,
-  .row.faq > .pull-right {
-    float: none !important; } }
-
-.row.faq .tab-content .fa {
-  font-size: 18px; }
-
-.row.faq .nav li + li {
-  margin-top: 20px; }
-
-.row.faq .nav li a {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 20px;
-  border-radius: 10px;
-  border: solid 1px #435469;
-  background-color: #fdfdfd;
-  color: #374146; }
-
-.row.faq .nav li.active a,
-.row.faq .nav li a:hover {
-  background-color: #386090;
-  border-color: #386090;
-  color: #ffffff; }
-
-.row.faq .nav li a .fa {
-  width: 20px;
-  text-align: center;
-  margin-right: 15px;
-  margin-top: 3px;
-  float: left; }
-
-.row.faq .nav li a .faq-inner {
-  display: block;
-  overflow: hidden; }
-
 /* 3.8 - Blog / Post
 /* ========================================================================== */
 .content .post-wrap {
@@ -4110,3 +4035,43 @@ section {
 .register .select {
   height: 60px !important;
   margin-top: 15px; }
+
+li {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: solid 1px #435469;
+  background-color: #fdfdfd;
+  color: #374146;
+  cursor: pointer; }
+
+ul li + li {
+  margin-top: 20px; }
+
+a {
+  color: #374146; }
+
+.active {
+  background: #386090; }
+
+.active a {
+  color: #fff; }
+
+li a .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 3px;
+  float: left; }
+
+.faq {
+  background: #FBFBFB; }
+
+.faq-answer {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #435469; }

@@ -7,6 +7,7 @@ import Testimonials from './Components/Testimonials/Testimonials';
 import Speakers from './Components/Speakers/Speakers';
 import Price from './Components/Price/Price';
 import Register from './Components/Register/Register';
+import FAQ from './Components/FAQ/FAQ';
 import './Styles/main.css'
 
 class App extends Component {
@@ -397,8 +398,143 @@ class App extends Component {
         button: {
           text: 'Register Nowww',
           icon: 'arrow-circle-right',
-      }
-
+      },
+      },
+      faq: {
+        icons: {
+          primary: 'question',
+          active: 'angle-right',
+          normal: 'plus',
+        },
+        title : 'Event FAQS',
+        subtitle: "find your answers",
+        button: {
+          href: '#',
+          icon: 'pencil',
+          text: ' Open a ticket',
+        },
+        data: [
+          {
+            icon: 'angle-right',
+            href: '#',
+            text: 'How to ...?! 1',
+            answer: {
+              text: " 1 Vestibulum sit amet tincidunt urna, eget ullamcorper purus. Aenean feugiat quis tortor vitae fringilla. Pellentesque augue nisl, condimentum at sem et, fermentum varius ligula. Nulla dignissim nulla eget congue cursus.",
+              features: [
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+              ],
+            },
+          },
+          {
+            icon: 'angle-right',
+            href: '#',
+            text: 'How to ...?!',
+            answer: {
+              text: ' 2 Vestibulum sit amet tincidunt urna, eget ullamcorper purus. Aenean feugiat quis tortor vitae fringilla. Pellentesque augue nisl, condimentum at sem et, fermentum varius ligula. Nulla dignissim nulla eget congue cursus.',
+              features: [
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+              ],
+            },
+          },
+          {
+            icon: 'angle-right',
+            href: '#',
+            text: 'How to ...?!',
+            answer: {
+              text: ' 3 Vestibulum sit amet tincidunt urna, eget ullamcorper purus. Aenean feugiat quis tortor vitae fringilla. Pellentesque augue nisl, condimentum at sem et, fermentum varius ligula. Nulla dignissim nulla eget congue cursus.',
+              features: [
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+              ],
+            },
+          },
+          {
+            icon: 'angle-right',
+            href: '#',
+            text: 'How to ...?!',
+            answer: {
+              text: ' 4 Vestibulum sit amet tincidunt urna, eget ullamcorper purus. Aenean feugiat quis tortor vitae fringilla. Pellentesque augue nisl, condimentum at sem et, fermentum varius ligula. Nulla dignissim nulla eget congue cursus.',
+              features: [
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+                {
+                  icon: 'check-circle-o',
+                  text: 'Awesome Feature',
+                },
+              ],
+            },
+          },
+        ],
       },
     }
   }
@@ -413,6 +549,7 @@ class App extends Component {
         <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
         <Price icon={this.state.price.icon} title={this.state.price.title} subtitle={this.state.price.subtitle} data={this.state.price.data} featured={this.state.price.featured} />
         <Register icon={this.state.register.icon} title={this.state.register.title} subtitle={this.state.register.subtitle} data={this.state.register.data} button={this.state.register.button} />
+        <FAQ icons={this.state.faq.icons} title={this.state.faq.title} subtitle={this.state.faq.subtitle} data={this.state.faq.data} button={this.state.faq.button} />
       </div>
     );
   }

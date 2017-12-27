@@ -1,0 +1,45 @@
+ li {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: solid 1px #435469;
+  background-color: #fdfdfd;
+  color: #374146;
+  cursor: pointer;
+}
+ul li + li {
+  margin-top: 20px;
+}
+
+a {
+  color: #374146;
+}
+
+.active {
+  background: #386090;
+}
+.active a {
+  color: #fff;
+}
+
+li a .fa {
+  width: 20px;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 3px;
+  float: left;
+}
+
+.faq {
+  background: #FBFBFB;
+}
+
+.faq-answer {
+  background: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #435469;
+}
