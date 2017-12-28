@@ -10,6 +10,7 @@ import Register from './Components/Register/Register';
 import FAQ from './Components/FAQ/FAQ';
 import RecentBlogPosts from './Components/RecentBlogPosts/RecentBlogPosts';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import './Styles/main.css'
 
 class App extends Component {
@@ -718,7 +719,45 @@ class App extends Component {
           href: '#',
           icon: 'paper-plane',
         }
-
+      },
+      footer: {
+        social: [
+          {
+            href: '#',
+            icon: 'instagram',
+            color: 'cyan',
+          },
+          {
+            href: '#',
+            icon: 'facebook',
+            color: 'blue',
+          },
+          {
+            href: '#',
+            icon: 'telegram',
+            color: 'hotpink',
+          },
+          {
+            href: '#',
+            icon: 'google',
+            color: 'mediumslateblue',
+          },
+          {
+            href: '#',
+            icon: 'skype',
+            color: 'mediumspringgreen',
+          },
+          {
+            href: '#',
+            icon: 'twitter',
+            color: 'blue',
+          },
+          {
+            href: '#',
+            icon: 'dribbble',
+            color: 'red',
+          },
+        ]
       }
     }
   }
@@ -736,6 +775,7 @@ class App extends Component {
         <FAQ icons={this.state.faq.icons} title={this.state.faq.title} subtitle={this.state.faq.subtitle} data={this.state.faq.data} button={this.state.faq.button} />
         <RecentBlogPosts icon={this.state.recentbp.icon} title={this.state.recentbp.title} subtitle={this.state.recentbp.subtitle} data={this.state.recentbp.data} button={this.state.recentbp.button} limit={this.state.recentbp.limit} column={this.state.recentbp.column} />
         <Contact icon={this.state.contact.icon} title={this.state.contact.title} subtitle={this.state.contact.subtitle} button={this.state.contact.button} />
+        <Footer social={this.state.footer.social} />
       </div>
     );
   }

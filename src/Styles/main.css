@@ -4107,3 +4107,29 @@ li a .fa {
   color: #fff; }
   .contact .form-control::placeholder {
     color: #fff; }
+
+.footer {
+  padding: 0; }
+  .footer .icon-inner {
+    display: table-cell;
+    width: 70px; }
+  .footer .fa-stack {
+    width: 50px;
+    height: 57px;
+    line-height: 57px;
+    margin-right: 20px; }
+  .footer .icon-container {
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 40px 0;
+    z-index: 0;
+    text-transform: uppercase;
+    color: #0d1d31;
+    display: table;
+    width: 100%;
+    text-align: center; }
+  .footer .center {
+    text-align: center;
+    color: #414650; }

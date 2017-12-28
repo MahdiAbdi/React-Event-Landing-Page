@@ -1,0 +1,32 @@
+.footer {
+  padding: 0;
+  .icon-inner {
+      display: table-cell;
+      width: 70px;
+  }
+
+  .fa-stack {
+      width: 50px;
+      height: 57px;
+      line-height: 57px;
+      margin-right: 20px;
+  }
+
+  .icon-container {
+    position: relative;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+    margin: 0 0 40px 0;
+    z-index: 0;
+    text-transform: uppercase;
+    color: #0d1d31;
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  .center {
+    text-align: center;
+    color: #414650;
+  }
+}
