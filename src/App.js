@@ -11,6 +11,7 @@ import FAQ from './Components/FAQ/FAQ';
 import RecentBlogPosts from './Components/RecentBlogPosts/RecentBlogPosts';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import FinalLoc from './Components/Location/Location';
 import './Styles/main.css'
 
 class App extends Component {
@@ -758,6 +759,22 @@ class App extends Component {
             color: 'red',
           },
         ]
+      },
+      location: {
+        icon: 'star',
+        title: "What's about event",
+        text: `Apple Store SOHO‎ 103 Prince St New York,‎ NY 10012, United States‎ +1 212-226-3126‎ ‎ hello@imevent.com`,
+        button: {
+          href: '#',
+          icon: 'arrow-circle-right',
+          text: 'Get Directions ',
+        },
+        defaultZoom: 10,
+        height: '600',
+        position: {
+          lat: -34.397,
+          lng: 150.644,
+        }
       }
     }
   }
@@ -774,6 +791,7 @@ class App extends Component {
         <Register icon={this.state.register.icon} title={this.state.register.title} subtitle={this.state.register.subtitle} data={this.state.register.data} button={this.state.register.button} />
         <FAQ icons={this.state.faq.icons} title={this.state.faq.title} subtitle={this.state.faq.subtitle} data={this.state.faq.data} button={this.state.faq.button} />
         <RecentBlogPosts icon={this.state.recentbp.icon} title={this.state.recentbp.title} subtitle={this.state.recentbp.subtitle} data={this.state.recentbp.data} button={this.state.recentbp.button} limit={this.state.recentbp.limit} column={this.state.recentbp.column} />
+        <FinalLoc defaultZoom={this.state.location.defaultZoom} height={this.state.location.height} position={this.state.location.position} icon={this.state.location.icon} title={this.state.location.title} text={this.state.location.text} button={this.state.location.button}  />
         <Contact icon={this.state.contact.icon} title={this.state.contact.title} subtitle={this.state.contact.subtitle} button={this.state.contact.button} />
         <Footer social={this.state.footer.social} />
       </div>
