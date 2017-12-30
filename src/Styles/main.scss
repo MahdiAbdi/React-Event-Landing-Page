@@ -31,3 +31,8 @@ $primary: $yellow-1;
 @import '../Components/Contact/contact';
 @import '../Components/Footer/footer';
 @import '../Components/Location/location';
+@import '../Components/Schedule/schedule';
+
+section {
+  margin: 0;
+}

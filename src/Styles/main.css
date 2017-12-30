@@ -4109,7 +4109,7 @@ section {
     color: #fff; }
 
 .footer {
-  padding: 0; }
+  padding-top: 50px; }
   .footer .icon-inner {
     display: table-cell;
     width: 70px; }
@@ -4150,3 +4150,58 @@ section {
   .mapwrapper .btn {
     color: #F1BE03;
     margin: auto; }
+
+.schedule .tabs {
+  text-align: center;
+  background: #435469;
+  border-radius: 50px 50px 0 0; }
+  .schedule .tabs a {
+    color: #fff; }
+  .schedule .tabs strong, .schedule .tabs small {
+    display: block; }
+  .schedule .tabs .tab {
+    padding: 20px; }
+  .schedule .tabs .active {
+    border-bottom: 5px solid mediumspringgreen; }
+
+.schedule .subtabs {
+  text-align: center;
+  border: 1px solid #000;
+  border-top: none;
+  border-bottom: none; }
+  .schedule .subtabs a {
+    color: #F1BE03; }
+  .schedule .subtabs .subtab {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    cursor: pointer; }
+  .schedule .subtabs .active {
+    border-bottom: 2px solid #F1BE03; }
+
+.schedule .tab-content {
+  padding: 40px 80px;
+  display: block;
+  background: #F5F5F5; }
+  .schedule .tab-content .post img {
+    border: 10px solid #afb4ba;
+    border-radius: 100%; }
+  .schedule .tab-content .post .meta {
+    color: #F1BE03; }
+    .schedule .tab-content .post .meta a {
+      color: #F1BE03; }
+  .schedule .tab-content .post .title {
+    margin: 10px 0;
+    color: #F1BE03;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D2D2DC; }
+  .schedule .tab-content .post .info {
+    color: #000; }
+    .schedule .tab-content .post .info i {
+      color: #000; }
+  .schedule .tab-content .post .content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 40px; }
+
+section {
+  margin: 0; }
