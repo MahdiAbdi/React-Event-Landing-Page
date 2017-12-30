@@ -1,0 +1,73 @@
+.schedule {
+  .tabs {
+    text-align: center;
+    background: #435469;
+    border-radius: 50px 50px 0 0;
+    a {
+      color: #fff;
+    }
+    strong, small {
+      display: block;
+    }
+    .tab {
+      padding: 20px;
+    }
+    .active {
+      border-bottom: 5px solid mediumspringgreen;
+    }
+  }
+  .subtabs {
+    text-align: center;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    a {
+      color: $primary;
+    }
+    .subtab {
+      padding: 20px;
+      border-bottom: 1px solid #000;
+      cursor: pointer;
+    }
+    .active {
+      border-bottom: 2px solid $primary;
+    }
+  }
+}
+
+.schedule {
+  .tab-content {
+    padding: 40px 80px;
+    display: block;
+    background: #F5F5F5;
+    .post {
+      img {
+        border: 10px solid #afb4ba;
+        border-radius: 100%;
+      }
+      .meta {
+        color: $primary;
+        a {
+          color: $primary;
+        }
+      }
+      .title {
+        margin: 10px 0;
+        color: $primary;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #D2D2DC;
+      }
+      .info {
+        color: #000;
+        i {
+          color: #000;
+        }
+      }
+      .content {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px 40px;
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ import RecentBlogPosts from './Components/RecentBlogPosts/RecentBlogPosts';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import FinalLoc from './Components/Location/Location';
+import Schedule from './Components/Schedule/Schedule';
 import './Styles/main.css'
 
 class App extends Component {
@@ -775,7 +776,555 @@ class App extends Component {
           lat: -34.397,
           lng: 150.644,
         }
-      }
+      },
+      schedule: {
+        icons: {
+          primary: 'question',
+          active: 'angle-right',
+          normal: 'plus',
+        },
+        title : 'Conference or Event Schedule',
+        subtitle: "dont forget it",
+        button: {
+          href: '#',
+          icon: 'print',
+          text: ' Download Schedule',
+        },
+        data: [
+          {
+            title: "Day 1",
+            subtitle: "10.01.1998",
+            subTabs: [
+              {
+                title: "Hall 1A",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 1A1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 1A2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 1B",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 1B1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 1B2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 1C",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 1C1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 1C2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+            ]
+          },
+          {
+            title: "Day 2",
+            subtitle: "11.01.1998",
+            subTabs: [
+              {
+                title: "Hall 2A",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 2A1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 2A2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 2B",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 2B1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 2B2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 2C",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 2C1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 2C2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+            ]
+          },
+          {
+            title: "Day 3",
+            subtitle: "12.01.1998",
+            subTabs: [
+              {
+                title: "Hall 3A",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 3A1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 3A2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 3B",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 3B1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 3B2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+              {
+                title: "Hall 3C",
+                posts: [
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "08:00 - 08:45",
+                    title: "Post Title 3C1",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                  {
+                    avatar: "http://eazzy.me/html/imevent/assets/img/preview/avatar-v2-2.jpg",
+                    time: "09:00 - 09:45",
+                    title: "Post Title 3C2",
+                    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis in feugiat mollis, libero eros consectetur elit non cursus lacus nisl at dolor.",
+                    name: "John Snow",
+                    position: "CEO at Throne.io",
+                    socials: [
+                      {
+                        icon: 'facebook',
+                        href: '#',
+                      },
+                      {
+                        icon: 'instagram',
+                        href: '#',
+                      },
+                      {
+                        icon: 'twitter',
+                        href: '#',
+                      },
+                      {
+                        icon: 'telegram',
+                        href: '#',
+                      },
+                    ]
+                  },
+                ]
+              },
+            ]
+          },
+        ]
+
+      },
     }
   }
   render() {
@@ -784,6 +1333,7 @@ class App extends Component {
         {/* <Home background={this.state.home.background} /> */}
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
+        <Schedule icons={this.state.schedule.icons} title={this.state.schedule.title} subtitle={this.state.schedule.subtitle} button={this.state.schedule.button} data={this.state.schedule.data} />
         <Sponsors icon={this.state.sponsors.icon} title={this.state.sponsors.title} subtitle={this.state.sponsors.subtitle} data={this.state.sponsors.data} buttons={this.state.sponsors.buttons} column={this.state.sponsors.column} />
         <Testimonials icon={this.state.testimonials.icon} title={this.state.testimonials.title} subtitle={this.state.testimonials.subtitle} quotes={this.state.testimonials.quotes} />
         <Speakers icon={this.state.speakers.icon} title={this.state.speakers.title} subtitle={this.state.speakers.subtitle} data={this.state.speakers.data} socials={this.state.speakers.socials} buttons={this.state.speakers.buttons} column={this.state.speakers.column} />
