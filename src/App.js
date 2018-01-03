@@ -20,7 +20,39 @@ class App extends Component {
     super(props);
     this.state = {
       home: {
-        background: 'http://eazzy.me/html/imevent/assets/img/preview/background-img-slider.jpg'
+        background: 'http://eazzy.me/html/imevent/assets/img/preview/background-img-slider.jpg',
+        formdata: [
+          {
+            name: 'name',
+            type: 'text',
+            title: '',
+            placeholder: 'Name and Surname'
+          },
+          {
+            name: 'email',
+            type: 'text',
+            title: '',
+            placeholder: 'Your Mail Here'
+          },
+          {
+            name: 'phone',
+            type: 'text',
+            title: '',
+            placeholder: 'Your Phone Number'
+          },
+          {
+            name: 'pricec',
+            type: 'dropdown',
+            title: '',
+            options: [
+              "100$",
+              "200$",
+              "300$",
+              "500$",
+              "850$",
+            ],
+          },
+        ],
       },
       about: {
         icon: 'star',
@@ -1330,7 +1362,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Home background={this.state.home.background} /> */}
+        <Home background={this.state.home.background} formdata={this.state.home.formdata} />
         <About icon={this.state.about.icon} title={this.state.about.title} subtitle={this.state.about.subtitle} text={this.state.about.text} buttons={this.state.about.buttons} images={this.state.about.images} />
         <Donation icon={this.state.donation.icon} title={this.state.donation.title} subtitle={this.state.donation.subtitle} text={this.state.donation.text} buttons={this.state.donation.buttons} />
         <Schedule icons={this.state.schedule.icons} title={this.state.schedule.title} subtitle={this.state.schedule.subtitle} button={this.state.schedule.button} data={this.state.schedule.data} />
